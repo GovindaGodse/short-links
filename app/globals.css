@@ -149,7 +149,7 @@ body {
 }
 
 .result-link {
-  @apply text-sm font-semibold text-[var(--accent)];
+  @apply text-sm text-[var(--accent)];
 }
 
 .result-info {
