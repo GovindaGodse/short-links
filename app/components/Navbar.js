@@ -16,7 +16,7 @@ function Navbar() {
           />
           Short Links
         </h2>
-        <ul className="flex-centered gap-4 text-sm max-sm:gap-2">
+        <ul className="flex-centered gap-4 text-[#c4c8cf] text-sm max-sm:gap-2">
           <Link href="/">
             <li className="app-link transition-colors mr-2 max-sm:mr-1">Home</li>
           </Link>

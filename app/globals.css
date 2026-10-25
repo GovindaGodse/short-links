@@ -59,7 +59,7 @@ body {
 }
 
 .hero-title {
-  @apply my-1 max-w-[720px] text-[clamp(2.75rem,6vw,3.75rem)] font-medium leading-[1.02] tracking-[-0.065em];
+  @apply my-1 max-w-[720px] text-[clamp(2.75rem,6vw,3.75rem)] font-medium leading-[1.02] tracking-[-0.065em] max-sm:text-[1.95rem];
 }
 
 .hero-title span {
@@ -67,7 +67,7 @@ body {
 }
 
 .hero-description {
-  @apply m-0 max-w-[470px] text-base leading-[1.8] text-muted;
+  @apply m-0 max-w-[470px] text-base leading-[1.8] text-muted max-sm:leading-[1.5];
 }
 
 .hero-actions {
@@ -75,7 +75,7 @@ body {
 }
 
 .primary-button {
-  @apply inline-flex min-h-12 items-center justify-center gap-3 rounded-[9px] border border-accent bg-accent px-5 text-sm font-bold text-accent-foreground transition duration-150 hover:-translate-y-0.5 hover:bg-accent-hover;
+  @apply inline-flex min-h-12 items-center justify-center gap-3 rounded-[9px] border border-accent bg-accent px-5 text-sm font-bold text-accent-foreground transition duration-150 hover:-translate-y-0.5 hover:bg-accent-hover max-sm:min-h-10 max-sm:px-3;
 }
 
 .tertiary-button {

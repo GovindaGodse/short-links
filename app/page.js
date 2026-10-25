@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="mx-auto my-10 flex w-full max-w-7xl grow flex-col gap-10 px-5 sm:gap-12 sm:px-8 lg:my-16 lg:items-center xl:flex-row">
-      <section className="flex w-full max-w-xl flex-col items-start justify-center gap-5">
+    <main className="mx-auto my-10 flex w-full max-w-7xl grow flex-col gap-10 px-5 sm:gap-12 sm:px-8 lg:my-16 items-center xl:flex-row">
+      <section className="flex w-full max-w-xl flex-col items-start justify-center gap-5 max-sm:gap-4">
         <span className="eyebrow">A simpler way to share</span>
         <h1 className="hero-title">
           Make every character <span>count.</span>
