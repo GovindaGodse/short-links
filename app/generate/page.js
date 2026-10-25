@@ -5,7 +5,9 @@ import { preload } from "react-dom";
 import Image from "next/image";
 
 export default function Generate() {
+  preload("/scissor.svg", { as: "image" });
   preload("/loading-scissor.svg", { as: "image" });
+  preload("/copy.svg", { as: "image" });
   preload("/copied.svg", { as: "image" });
   const [url, setUrl] = useState("");
   const [generatedShortURL, setGeneratedShortURL] = useState("");
