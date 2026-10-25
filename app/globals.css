@@ -126,7 +126,7 @@ body {
 }
 
 .url-input {
-  @apply h-[45px] w-full rounded-lg border border-[#30363b] bg-[#0d0f11] px-[14px] text-[13px] text-[#f4f5f7] outline-none transition-[border-color] duration-150 placeholder:text-[#69717a] focus:border-[rgb(199_243_107_/_65%)] max-sm:h-10;
+  @apply h-[45px] w-full rounded-lg border border-[#30363b] bg-[#0d0f11] px-[14px] text-[13px] text-[#f4f5f7] outline-none transition-[border-color] duration-150 placeholder:text-[#69717a] focus:border-[rgb(199_243_107_/_65%)] max-sm:h-10 max-sm:text-base max-sm:[font-size-adjust:0.42];
 }
 
 .generate-button {
