@@ -40,7 +40,7 @@ body {
 }
 
 .app-navbar {
-  @apply flex items-center justify-evenly border-b py-3 backdrop-blur-xl;
+  @apply flex items-center border-b py-3 backdrop-blur-xl;
   background-color: var(--background);
   border-color: var(--line);
 }
