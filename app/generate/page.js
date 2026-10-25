@@ -1,8 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import { preload } from "react-dom";
+import Image from "next/image";
 
 export default function Generate() {
+  preload("/loading-scissor.svg", { as: "image" });
+  preload("/copied.svg", { as: "image" });
   const [url, setUrl] = useState("");
   const [generatedShortURL, setGeneratedShortURL] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -99,8 +103,15 @@ export default function Generate() {
               className="generate-button"
               type="submit"
               disabled={!isValidUrl(url) || isLoading}
+              aria-label={isLoading ? "Generating short link" : "Shorten link"}
             >
-              {isLoading ? "Generating..." : "Shorten link"}
+              <Image
+                src={isLoading ? "/loading-scissor.svg" : "/scissor.svg"}
+                alt=""
+                width={18}
+                height={18}
+                aria-hidden="true"
+              />
             </button>
           </div>
           <p className="generator-hint">
@@ -123,8 +134,15 @@ export default function Generate() {
                     className="copy-button"
                     type="button"
                     onClick={copyLink}
+                    aria-label={copied ? "Copied" : "Copy link"}
                   >
-                    {copied ? "Copied" : "Copy link"}
+                    <Image
+                      src={copied ? "/copied.svg" : "/copy.svg"}
+                      alt=""
+                      width={18}
+                      height={18}
+                      aria-hidden="true"
+                    />
                   </button>
                 </div>
               )}
@@ -138,7 +156,8 @@ export default function Generate() {
           )}
         </form>
         <p className="privacy-note">
-          <span className="text-base font-extralight">*</span> No account needed. Your link is ready in seconds.
+          <span className="text-base font-extralight">*</span> No account
+          needed. Your link is ready in seconds.
         </p>
       </section>
     </main>
