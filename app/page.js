@@ -19,7 +19,7 @@ export default function Home() {
             Shorten a link
           </Link>
           <Link
-            href="https://github.com/GovindaGodse/bit-links"
+            href="https://github.com/GovindaGodse/short-links"
             className="tertiary-button flex-centered items-center gap-1"
             target="_blank"
             rel="noreferrer"

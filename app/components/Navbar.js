@@ -31,7 +31,7 @@ function Navbar() {
           </Link>
           <Link
             target="_blank"
-            href="https://github.com/GovindaGodse/bit-links"
+            href="https://github.com/GovindaGodse/short-links"
             rel="noreferrer"
             className="flex-centered gap-0.5 app-link transition-colors"
           >
